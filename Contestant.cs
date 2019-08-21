@@ -14,19 +14,23 @@ namespace SweepStakes
         public string emailAddress;
         public string registrationNumber;
 
-
         //constructor
-        public Contestant(string firstName, string lastName, string emailAddress, string registrationNumber)
+        public Contestant()
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.emailAddress = emailAddress;
-            this.registrationNumber = registrationNumber;
+
         }
 
-        
+
         //member methods
 
-
+        public void ContestantInfo()
+        {
+            UserInterface user = new UserInterface();
+            firstName = user.GetContestantFirstName();
+            lastName = user.GetContestantLastName();
+            emailAddress = user.GetContestantEmailAddress();
+            registrationNumber = user.GetContestantRegistrationNumber();
+            
+        }
     }
 }

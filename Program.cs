@@ -12,15 +12,9 @@ namespace SweepStakes
         static void Main(string[] args)
         {
             Sweepstakes sweepstakes = new Sweepstakes();
-            //Contestant contestant;
-            sweepstakes.RegisterContestant();
-            //UserInterface userInterface = new UserInterface();
-            //userInterface.GetContestantFirstName();
-            //userInterface.GetContestantLastName();
-            //userInterface.GetContestantEmailAddress();
-            //userInterface.GetContestantRegistrationNumber();
-
-
+            Contestant contestant = new Contestant();
+            sweepstakes.RegisterContestant(contestant);
+              
         }
     }
 }

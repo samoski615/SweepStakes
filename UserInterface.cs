@@ -8,15 +8,16 @@ namespace SweepStakes
 {
     public class UserInterface
     {
-        //grab contestant information, send to sweepstakes stack/queue
+        //grab contestant information, send to Sweepstakes.RegisterContestant
         public string firstName;
         public string lastName;
         public string emailAddress;
         public string registrationNumber;
+        
 
         public UserInterface()
         {
-
+            
         }
 
         public string GetContestantFirstName()

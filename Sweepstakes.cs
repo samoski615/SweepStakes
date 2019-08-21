@@ -12,13 +12,13 @@ namespace SweepStakes
         //use Dictionary data structure as underlying structure
         
         Dictionary<string, Contestant> contestantList;
-       
+        UserInterface userInfo;
 
         //constructor injection
         public Sweepstakes()
         {
             contestantList = new Dictionary<string, Contestant>();
-           
+            userInfo = new UserInterface();
 
         }
 
@@ -27,10 +27,8 @@ namespace SweepStakes
         //member methods
         public void RegisterContestant(Contestant contestant)
         {
-            //register contestant obj in sweepstakes 
-
-            string registrationNumber = null;
-            contestantList.Add(registrationNumber, contestant);
+            contestant.ContestantInfo();
+            contestantList.Add(contestant.registrationNumber, contestant);
             
             
             
@@ -38,8 +36,8 @@ namespace SweepStakes
         public void PrintContestantInfo(Contestant contestant)
         {
             //print a contestant to the console using dictionary lookup
-           //could be used to print winners/participants to a list
-            
+            //could be used to print winners/participants to a list
+            Console.WriteLine(contestant);  
         }
 
         //public string PickWinner()
@@ -49,10 +47,10 @@ namespace SweepStakes
             
         //}
 
-        public void GetSweepstakes()
-        {
-            //method for calling sweepstakes and sending to ISweepstakesManager, which pushes out to either Queue Manager or Stack Manager
-        }
+        //public Sweepstakes GetSweepstakes()
+        //{
+        //    //method for calling sweepstakes and sending to ISweepstakesManager, which pushes out to either Queue Manager or Stack Manager
+        //}
 
        
     }
