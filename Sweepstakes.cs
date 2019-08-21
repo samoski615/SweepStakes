@@ -40,18 +40,20 @@ namespace SweepStakes
             Console.WriteLine(contestant);  
         }
 
-        //public string PickWinner()
-        //{
-        //    //random number generator for picking winner                                    
-        //    //convert int toString
+        public string PickWinner()
+        {
+            //random number generator for picking winner                                    
+            //convert int toString
+            Random rng = new Random();
             
-        //}
 
-        //public Sweepstakes GetSweepstakes()
-        //{
-        //    //method for calling sweepstakes and sending to ISweepstakesManager, which pushes out to either Queue Manager or Stack Manager
-        //}
+        }
 
-       
+        public Sweepstakes GetSweepstakes()
+        {
+            //method for calling sweepstakes and sending to ISweepstakesManager, which pushes out to either Queue Manager or Stack Manager
+        }
+
+
     }
 }
