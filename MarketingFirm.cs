@@ -8,5 +8,20 @@ namespace SweepStakes
 {
     class MarketingFirm
     {
+        //effective "run applications" class -- majority of code will be run here
+
+        //member variables
+
+
+
+        //constructor 
+
+
+
+        //member methods
+
+
+
+
     }
 }

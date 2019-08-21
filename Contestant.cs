@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    class Contestant<T>
+   public class Contestant
     {
         //member variables
-        T firstName;
-        T lastName;
-        T emailAddress;
-        T registrationNumber;
-      
+        public string firstName;
+        public string lastName;
+        public string emailAddress;
+        public string registrationNumber;
 
 
         //constructor
-        public Contestant(T firstName, T lastName, T emailAddress, T registrationNumber)
+        public Contestant(string firstName, string lastName, string emailAddress, string registrationNumber)
         {
             this.firstName = firstName;
             this.lastName = lastName;
@@ -25,8 +24,9 @@ namespace SweepStakes
             this.registrationNumber = registrationNumber;
         }
 
+        
         //member methods
 
-        
+
     }
 }

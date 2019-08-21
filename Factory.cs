@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    interface ISweepstakesManager
+    class Factory 
     {
-        void InsertSweepstakes(Sweepstakes sweepstakes);
-
-        Sweepstakes GetSweepstakes();
+        //use switch case for queue/stack pick (managed by marketing firm)
+       
     }
-
-
-    
 }
