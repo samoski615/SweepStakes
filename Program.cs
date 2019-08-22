@@ -11,12 +11,8 @@ namespace SweepStakes
                 
         static void Main(string[] args)
         {
-            Sweepstakes sweepstakes = new Sweepstakes();
-            Contestant contestant = new Contestant();
-            sweepstakes.RegisterContestant(contestant);
-            sweepstakes.PrintContestantInfo(contestant);
-            sweepstakes.PickWinner();
-            //sweepstakes.RandomNumberGenerator();
+            MarketingFirm marketingFirm = new MarketingFirm();
+            marketingFirm.ChooseQueueOrStack();
               
         }
     }

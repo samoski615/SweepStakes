@@ -40,7 +40,6 @@ namespace SweepStakes
         {
             //print a contestant to the console using dictionary lookup
             //could be used to print winners/participants to a list
-            //RegisterContestant(contestant);
 
             foreach (KeyValuePair<string, Contestant> pair in contestantList)
             {
@@ -65,16 +64,16 @@ namespace SweepStakes
 
         }
 
-        //public Sweepstakes GetSweepstakes()
-        //{
-        //    //method for sending sweepstakes from ISweepstakesManager, which pushes out to either Queue Manager or Stack Manager
-        //}
+        public Sweepstakes GetSweepstakes()
+        {
+            //method for sending sweepstakes from ISweepstakesManager, which pushes out to either Queue Manager or Stack Manager
+        }
 
 
         public int RandomNumberGenerator()
         {    //random number generator for picking winner                                    
             Random rng = new Random();
-            winner = rng.Next(1, 5);
+            winner = rng.Next(1, 2);
             return winner;
         }
     }
