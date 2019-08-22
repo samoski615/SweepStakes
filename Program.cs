@@ -14,6 +14,9 @@ namespace SweepStakes
             Sweepstakes sweepstakes = new Sweepstakes();
             Contestant contestant = new Contestant();
             sweepstakes.RegisterContestant(contestant);
+            sweepstakes.PrintContestantInfo(contestant);
+            sweepstakes.PickWinner();
+            //sweepstakes.RandomNumberGenerator();
               
         }
     }

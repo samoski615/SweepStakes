@@ -46,6 +46,7 @@ namespace SweepStakes
         {
             Console.WriteLine("Please enter your registration number: ");
             string registrationNumber = Console.ReadLine();
+            Convert.ToInt32(registrationNumber);
             return registrationNumber;
         }
     }
