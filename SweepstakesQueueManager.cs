@@ -11,11 +11,9 @@ namespace SweepStakes
         //use the queue data structure as an underlying structure
         //implement methods from the ISweepstakesManager interface using Queue methods
         Queue<Sweepstakes> queueManager = new Queue<Sweepstakes>();
-        Sweepstakes sweepstakes;
 
         public SweepstakesQueueManager()
         {
-            sweepstakes = new Sweepstakes();
         }
 
         public Sweepstakes GetSweepstakes()

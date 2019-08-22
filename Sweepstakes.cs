@@ -64,10 +64,7 @@ namespace SweepStakes
 
         }
 
-        public Sweepstakes GetSweepstakes()
-        {
-            //method for sending sweepstakes from ISweepstakesManager, which pushes out to either Queue Manager or Stack Manager
-        }
+        
 
 
         public int RandomNumberGenerator()

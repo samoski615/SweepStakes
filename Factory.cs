@@ -13,16 +13,18 @@ namespace SweepStakes
         SweepstakesStackManager stackManager;
         SweepstakesQueueManager queueManager;
         Sweepstakes sweepstakes;
+        MarketingFirm firm;
 
         public Factory()
         {
             stackManager = new SweepstakesStackManager();
             queueManager = new SweepstakesQueueManager();
             sweepstakes = new Sweepstakes();
-
+            firm = new MarketingFirm();
         }
         public void PickQueueOrStack()
         {
+            input = firm.ChooseQueueOrStack();
 
             switch (input)
             {
@@ -33,6 +35,7 @@ namespace SweepStakes
                     stackManager.InsertSweepstakes(sweepstakes);
                     break;
                 default:
+                    PickQueueOrStack();
                     break;
             }
         }

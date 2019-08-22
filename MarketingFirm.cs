@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    class MarketingFirm : Factory
+    class MarketingFirm 
     {
         //    effective "run applications" class -- majority of code will be run here
 
@@ -33,7 +33,6 @@ namespace SweepStakes
             return input;
         }
 
-
-
+        
     }
 }
